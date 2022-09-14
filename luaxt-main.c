@@ -138,22 +138,6 @@ void proc_exit()
 
 
 
-int lua_print_array(lua_State* L)
-{
-/ / check that the first parameter passed in Lua’s calling code must be table. Otherwise, an error will be raised.
-    luaL_checktype(L,1,LUA_TTABLE);
-/ / get the number of fields in the table, that is, the number of elements in the array.
-    int n = lua_objlen(L,1);
-/ / the starting index of the array in Lua is used to be 1 instead of 0 in C.
-    for (int i = 1; i <= n; ++i) {
-        lua_ rawgeti(L,1,i); / / press in table [i]
-	const char* s = luaL_checkstring(L,-1);
-	fprintf(stderr, "lua str: %s\n", s ); 
-    }
-
-/ / no result is returned to Lua code.
-    return 0;
-}
 
 
 
