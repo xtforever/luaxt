@@ -35,10 +35,10 @@ end
 
 print ("- lua has started -")
 
-
-
+luaxt.luaxt_hello( 50 * 5 )
 
 test_callback()
+
 
 repeat
 
