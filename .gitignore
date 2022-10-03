@@ -11,3 +11,5 @@ Wlabel.c
 parse.tab.c
 parse.tab.h
 
+luaxt-main
+luaxt_wrap.c
