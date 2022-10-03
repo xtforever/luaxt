@@ -11,6 +11,10 @@ char*  luaxt_pullcallback( void );
 Widget luaxt_nametowidget(char *s);
 void   luaxt_setvalue( char *w, char *res, char *val );
 void   luaxt_hello( int z );
+
+/* var5[ 'player1' ] = 'hello' */
+
+
 extern XtAppContext LUAXT_APP;
 extern Widget TopLevel;
 #endif

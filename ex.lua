@@ -33,11 +33,29 @@ function test_callback()
 end
 
 
+
+
+
+
 print ("- lua has started -")
 
 luaxt.luaxt_hello( 50 * 5 )
+p=var5[ "test" ]
+print( "p val: "  .. p['b'] )
+print( p )
 
-test_callback()
+x=var5[ "test" ]['x']
+print( 'this is x '.. x )
+
+
+a = var5.new(1)
+print( "size: " .. var5.size(a) )
+print( "get:" .. var5.get(a, 1) )
+exit(1)
+
+
+
+
 
 
 repeat
