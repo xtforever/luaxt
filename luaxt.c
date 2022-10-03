@@ -55,3 +55,8 @@ void   luaxt_setvalue( char *name, char *res, char *val )
     if(!w) return;
     XtVaSetValues( w, res, val, NULL );
 }
+
+void luaxt_hello( int z )
+{
+    printf("hello z:%d\n", z );
+}

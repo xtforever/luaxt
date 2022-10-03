@@ -11,5 +11,6 @@ int    luaxt_pushcallback( char *callback_str );
 char*  luaxt_pullcallback( void );
 Widget luaxt_nametowidget( char *s );
 void   luaxt_setvalue( char *w, char *res, char *val );
+void   luaxt_hello( int z );
 
 extern XtAppContext LUAXT_APP;
